@@ -13,15 +13,15 @@
 # See the License for the specific language governing permissions and
 
 #<> User and group name under which the server will be installed and running.
-default[:im][:user] = 'im'
-default[:im][:group] = 'im-admin'
+default[:im][:user] = 'rusa'
+default[:im][:group] = 'sgsup'
 
 #<
 # Home directory for `im user`. The attribute is ignored if `im user` is root. 
 # For nonAdmin access mode, the registry of IBM Installation Manager (IM) is found at `user_home_dir/etc/.ibm/registry/InstallationManager.dat`.
 # The registry path MUST NOT be equal to `base_dir`, or a parent directory or a subdirectory of `base_dir`.
 #>
-default[:im][:user_home_dir] = '/home/im'
+default[:im][:user_home_dir] = '/home/rusa'
 
 #<> Base installation directory.
 default[:im][:base_dir] = '/opt/IBM/InstallationManager'
@@ -31,7 +31,7 @@ default[:im][:data_dir] = '/var/ibm/InstallationManager'
 #<
 # The IM install zip file. Set this attribute if the installer is on a local filesystem.
 #>
-default[:im][:install_zip][:file] = "/home/ms66518/IHS/agent.installer.linux.gtk.x86_1.6.2000.20130301_2248.zip"
+default[:im][:install_zip][:file] = "/apps/IHS/agent.installer.linux.gtk.x86_1.6.2000.20130301_2248.zip"
 
 #<
 # The IM install zip url. Set this attribute if the installer is on a remote fileserver.
