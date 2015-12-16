@@ -85,8 +85,6 @@ execute "unpack #{zip_filename}" do
   command "unzip #{zip_file}" 
   user im_user
   group im_group
-  mode '744'
-  recursive true
   creates "#{scratch_dir}/userinstc"
 end
 
