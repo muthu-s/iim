@@ -56,7 +56,7 @@ end
   directory dirname do
   group im_group
   owner im_user
-    mode '0755'
+    mode '0764'
   recursive true
   end
 end
