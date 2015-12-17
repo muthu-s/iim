@@ -13,15 +13,15 @@
 # See the License for the specific language governing permissions and
 
 #<> User and group name under which the server will be installed and running.
-default[:im][:user] = 'root'
-default[:im][:group] = 'root'
+default[:im][:user] = 'rusa'
+default[:im][:group] = 'sgsup'
 
 #<
 # Home directory for `im user`. The attribute is ignored if `im user` is root. 
 # For nonAdmin access mode, the registry of IBM Installation Manager (IM) is found at `user_home_dir/etc/.ibm/registry/InstallationManager.dat`.
 # The registry path MUST NOT be equal to `base_dir`, or a parent directory or a subdirectory of `base_dir`.
 #>
-default[:im][:user_home_dir] = ''
+default[:im][:user_home_dir] = '/home/rusa'
 
 #<> Base installation directory.
 default[:im][:base_dir] = '/opt/IBM/InstallationManager'
@@ -39,7 +39,7 @@ default[:im][:install_zip][:file] = "/apps/IIM/agent.installer.linux.gtk.x86_1.6
 default[:im][:install_zip][:url] = nil
 
 #<> The mode in which the installation is run. Valid options are: 'admin' 'nonAdmin' and 'group'. 
-default[:im][:access_mode] = 'admin'
+default[:im][:access_mode] = 'nonAdmin'
 
 #<> A default secure storage file, which is only used if the cookbook that calls the provider does not supply its own secure storage file
 default[:im][:secure_storeage_file] = nil
