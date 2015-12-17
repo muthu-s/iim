@@ -31,7 +31,7 @@ default[:im][:data_dir] = '/var/ibm/InstallationManager'
 #<
 # The IM install zip file. Set this attribute if the installer is on a local filesystem.
 #>
-default[:im][:install_zip][:file] = "/apps/IIM/agent.installer.linux.gtk.x86_1.6.2000.20130301_2248.zip"
+default[:im][:install_zip][:file] = "/apps/IIM/agent.installer.linux.gtk.x86_64_1.8.4000.20151125_0201.zip"
 
 #<
 # The IM install zip url. Set this attribute if the installer is on a remote fileserver.
